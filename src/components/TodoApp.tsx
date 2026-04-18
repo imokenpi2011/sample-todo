@@ -1,9 +1,11 @@
-import { useTodos } from './hooks/useTodos'
-import { TodoInput } from './components/TodoInput'
-import { TodoItem } from './components/TodoItem'
-import { TodoFooter } from './components/TodoFooter'
+'use client'
 
-export default function App() {
+import { useTodos } from '@/hooks/useTodos'
+import { TodoInput } from './TodoInput'
+import { TodoItem } from './TodoItem'
+import { TodoFooter } from './TodoFooter'
+
+export function TodoApp() {
   const {
     todos,
     filter,
@@ -44,7 +46,7 @@ export default function App() {
             </ul>
           ) : (
             <div className="py-12 text-center text-gray-300 text-sm">
-              {filter === 'all' ? 'タスクがありません' : 'タスクがありません'}
+              タスクがありません
             </div>
           )}
 

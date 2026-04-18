@@ -1,5 +1,7 @@
+'use client'
+
 import { useState, useRef, useEffect, type KeyboardEvent } from 'react'
-import type { Todo } from '../types/todo'
+import type { Todo } from '@/types/todo'
 
 interface Props {
   todo: Todo

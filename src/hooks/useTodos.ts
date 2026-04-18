@@ -1,5 +1,7 @@
+'use client'
+
 import { useState, useEffect } from 'react'
-import type { Todo, FilterType } from '../types/todo'
+import type { Todo, FilterType } from '@/types/todo'
 
 const STORAGE_KEY = 'sample-todo-items'
 

@@ -1,4 +1,6 @@
-import type { FilterType } from '../types/todo'
+'use client'
+
+import type { FilterType } from '@/types/todo'
 
 interface Props {
   activeCount: number
